@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Photography Studios</title>
+</head>
+<style>
+ 
+  body{
+    margin:0;
+  }
+   
+  .main{
+    width: 100%;
+    height:500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:2px solid black;
+    background-image: url(./silhouette-photographer-who-shoots-sunset-mountains\ 1.jpg);
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    }
+.child{ 
+  width: 400px;
+  height:300px;
+ text-align: center;
+ padding-left: 60%;
+ color: white;
+}
+.border{
+  height: 240px;
+  width:300px;
+  border: 2px solid white;
+  border-radius: 5%;
+}
+.tab{
+        flex-grow: 0;
+        font-size: 18px;
+       }
+       .nav{
+        font-size: 30px;
+       }
+       .list{
+        margin: 0 20px;
+       }
+       .line{
+        width: 200px;
+        margin: auto;
+        
+       }
+       .pricing{
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+       }
+      .price{
+        text-align: center;
+        margin-bottom: 30px;
+        color: white;
+        
+        
+      }
+      .main-price{
+        padding: 50px 0;
+        background-color: black;
+      }
+      .card-body{
+        text-align: center;
+        
+      }
+      .card{
+       
+        border-radius: 10px 10px 10px 10px;
+        
+      }
+      .image{
+        padding-right: 10px;
+        padding-left: 20px;
+        padding-top: 20px;
+        
+      }
+      .about,.contact{
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      text-align: center;
+
+      }
+      .con{
+        text-align: center;
+        padding:30px 20px ;
+      }
+      .contact{
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+      .about{
+        background-color: black;
+        color: white;
+        padding-left: 100px;
+        width:100%;
+        height:auto;
+      }
+      .para{
+        width:500px;
+       line-height: 30px; 
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;    
+      }
+
+      .img{
+        
+        height:300px;
+         width:200px;
+         object-fit: contain;
+      }
+      .footer{
+       color:white;
+       padding-top: 20px;
+      
+      }
+      .foot{
+        width:1350px;
+        height:70px;
+        background-color: black;
+        
+      }
+      footer{
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        
+      }
+      #message{
+        height: 100px;
+      }
+      .contact1{
+        background-color:#efefef;
+        border: none;
+      }
+      .button{
+        background-color:transparent;
+        padding: 5px 20px;
+        border-radius: 10px;
+      }
+      .stick{
+        background-color:transparent;
+        border-color: white;
+        color: white;
+        padding: 5px 20px;
+        border-radius: 10px;
+        margin-top: 30px;
+      }
+      .portfolio{
+        display: flex;
+        justify-content: space-around;
+        height: 520px;
+        align-items: center;
+        gap: 20px;
+      }
+     .port1{
+      background-image: url(./young-sensitive-man-thinking\ 1.jpg);
+      background-size:cover;
+      height: 450px;
+      border-radius: 10px;
+      text-align: center;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-content: space-around;
+      
+     }
+     .more{
+      /* margin-top: 160px; */
+      border-radius: 10px;
+      background-color:transparent;
+      border-color: white;
+        color: white;
+        width: 120px;
+        margin: auto;
+     }
+     .potraits{
+      margin: auto;
+      color: white;
+      width: 80%;
+     }
+     .port2{
+      width:450px;
+      height: 450px;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+     }
+     .port3{
+      width:300px;
+      height:450px;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+     }
+     .imge{
+      background-image: url(./father-throwing-up-son\ 1.jpg);
+      background-size:cover;
+      height:250px;
+      border-radius: 10px;
+     }
+     .heading1{
+      width: 100%;
+      height:150px;
+      border:2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+     }
+     .family{
+      color:black;
+      width: 100px;
+      text-align: center;
+     
+     }
+     .family1{
+      color:white;
+      width: 100px;
+      text-align: center;
+    }
+     .more1{
+      border-radius: 10px;
+      background-color:transparent;
+      border-color: white;
+        color: white;
+        width: 120px;  
+     }
+     .imge1{
+      background-image: url(./cropped-handsome-groom-wedding-black-suit-touching-bare-shoulders-happy-young-bride-veil-white-gown-which-holding-bunch-flowers-looking-each-other-road-downtown\ 1.jpg);
+      background-size:cover;
+      height:200px;
+      border-radius: 10px;
+
+    }
+    .imge2{
+      background-image: url(./front-view-young-modern-lady-colorful-coat-orange-t-shirt-with-black-earphones-sunglasses-posing-dance-modern-fashion\ 1.jpg);
+      background-size:cover;
+      height:150px;
+      border-radius: 10px;
+    }
+    .btn{
+      background-color:transparent;
+      border-color:black; 
+    }
+    .social{
+      margin: auto;
+    }
+</style>
+<body>
+ 
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand nav" href="#">Photography Studio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse tab" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item list">
+            <a class="nav-link " aria-current="page" href="#section-one">Home</a>
+          </li>
+          <li class="nav-item list">
+            <a class="nav-link" href="#section-two">About me</a>
+          </li>
+          <li class="nav-item list">
+            <a class="nav-link" href="#section-three">Portfolio</a>
+          </li>
+          <li class="nav-item list">
+            <a class="nav-link" href="#section-four">pricing</a>
+          </li>
+          <li class="nav-item list">
+            <a class="nav-link" href="#section-five">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<section id="section-one">
+  <div class="main">
+   
+    <div class="child" >
+      <div class="border">
+      <h3> Name </h3>
+     
+      <h2 >Photography</h2>
+      <hr class="line"> 
+      <h2>Studio</h2>
+      
+        <button class="stick">Hire</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-two">
+  <div class="about">
+    <div class="para">
+    <div><h3 class="con">About Us </h3> 
+      <div>
+    <p >Photography is an art form that has been around for nearly two centuries and has evolved in countless ways since its inception. From the earliest camera to the latest digital technologies, photography has become an integral part of modern life, with billions of photos being taken every day.</p> 
+  </div>
+</div>
+</div>
+  <div  >
+    <img src="./stylish-young-african-black-man-with-white-cup-coffee-posing-dark-studio-background 1 (1).jpg"  class="img"> 
+  </div>
+  </div>
+</section>
+<section id="section-three">
+  <div class="portfolio">
+    <div class="port1">
+<h3 class="potraits">Potraits Photography</h3>
+<button class="more">more</button>
+    </div>
+    <div class="port2">
+      <div class="heading1">
+<h2>PORTFOLIO</h2>
+      </div>
+      <div class="imge">
+        <h3 class="family">Family Photography</h3>
+        <button class="more1">more</button>
+      </div>
+
+    </div>
+    <div class="port3">
+<div class="imge1">
+  <h3 class="family">wedding Photography</h3>
+  <button class="more1">more</button>
+</div>
+<div class="imge2">
+  <h3 class="family1">private Photography</h3>
+  <button class="more1">more</button>
+</div>
+    </div>
+  </div>
+</section>
+<section id="section-four">
+  <div class="main-price">
+   
+    <div><h3 class="price">-------Pricing-------</h3></div>
+    <div class="pricing"> 
+    <div class="card" style="width: 18rem;">
+      <img src="./portrait-young-cheerful-african-boy 1.jpg " width="275px" height="170px" class="image">
+      <div class="card-body">
+        <h5 class="card-title">Perfect for child photos</h5>
+        <p class="card-text">Upto 5 hours</p>
+        <p class="card-text">200/- per Hour</p>
+        <a href="#" class="btn">more</a>
+      </div>
+    </div>
+    
+    <div class="card " style="width: 18rem;">
+      <img src="./canal-black-white-with-boat 1.jpg"width="275px" height="170px" class="image">
+      <div class="card-body">
+        <h5 class="card-title">Perfect for tours</h5>
+        <p class="card-text">Upto 24 hours</p>
+        <p class="card-text">300/- per Hour</p>
+        <a href="#" class="btn">more</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="./SL-042222-49870-22 1.jpg"width="275px" height="170px"class="image">
+      <div class="card-body">
+        <h5 class="card-title">Perfect for videos</h5>
+        <p class="card-text">Upto 2 days</p>
+        <p class="card-text">300/- per Hour</p>
+        <a href="#" class="btn">more</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section id="section-five">
+  <h2 class="con">----Contact-----</h2>
+  <div class="contact">
+    
+    <div >
+      <h4>Contact me</h4>
+      <br/>
+      <p>phone:9087654321</p>
+      <p>Email:photographystudio.com</p>
+    </div>
+    <div>
+      <h3>Get in touch with me<hr/></h3>
+      <form>
+      
+       <input type="Email" class="contact1" id="Email" placeholder="Email"/>
+       <br/><br/>
+       
+       <input type="text" class="contact1" id="message" placeholder="Message" />
+       <br/><br/>
+       <button class="button">send</button>
+      </form>
+    </div>
+  </div>
+</section>
+  <footer class="foot">
+    <div>
+    <p class="footer">Photograph Studio</p>
+    </div>
+    <div class="social" >
+      <i>Instagram</i>
+      <i>Facebook</i>
+      <i>Twitter</i>
+      <i>Youtube</i>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
